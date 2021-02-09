@@ -217,12 +217,21 @@ font-family:times new roman;
                  <br>
                  
                     <style>
-                     #images  {
-                          width: 5000px;
-                          height: 600px;
-                          margin:auto;
-                          width:50%;
-                                      }
+                     * {  box-sizing: border-box;
+                               }
+
+                     .column {
+                         float: left;
+                         width: 33.33%;
+                         padding: 5px;
+                                     }
+
+                      /* Clearfix (clear floats) */
+                        .row::after {
+                        content: "";
+                        clear: both;
+                        display: table;
+                                 }
                       </style>
                  <h2 style="background-color:white; font-family:times new roman; text-align:center;font-size:36px; color:darkolivegreen" id="Hobbies & Inspiration"><b>Hobbies & Inspiration<b/></h2>
                  <h3 style="font-family:monaco; text-align:center;">Snow Walks</h3>
