@@ -10,6 +10,7 @@
 <style>
  /*Nav bar*/
  ul {
+  position: fixed;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -31,6 +32,15 @@ li a {
 
 li a:hover {
   background-color: magenta;
+}
+ 
+ .active {
+  background-color: magenta;
+}
+ 
+ @media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
 }
 /*nav bar end*/
  
