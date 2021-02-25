@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+ <title>Sam Hogsden</title>
+ <meta name="description" content="sam hogsden">
+ <meta name="keywords" content="sam hogsden, CV, resume, customer service, teacher, social media, supply chain">
+ <meta name="author" content="sam hogsden">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+ /*Nav bar*/
+ ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: darkolivegreen;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: magenta;
+}
+ 
+ .active {
+  background-color: magenta;
+}
+ 
+ @media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+/*nav bar end*/
+ 
+img {
+ display:block;
+  margin:auto;
+  width:25%;
+ }
+ 
+ * {
+  box-sizing: border-box;
+}
+ 
+ div {
+  text-align:center;
+ }
+ 
+/* Style the header */
+header {
+  padding: 0px;
+  text-align: center;
+  font-size: 35px;
+  color: darkblue; 
+}
+ 
+ article {
+  width: 70%;
+  float: right;
+  text-align: center;
+  height: 350px;
+  padding: 0px 100px 0px 0px;
+ }
+
+ /* Create columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 350px;
+ font-style: perpetua;
+  font-size:15px;
+ text-align:center;
+ padding: 30px;
+ }
+ 
+ a:link {
+  color: darkolivegreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkolivegreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: magenta;
+  text-decoration: underline;
+}
+  
+ /* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+ 
+ /* Style the footer */
+footer {
+  padding: 0px;
+  text-align: center;
+ 
+ /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+ 
+ H2 {
+font-family:times new roman;
+  text-align:center;
+  font-size:36px"
+ }
+ 
+ </style>
+ </head>
+ <body>
+ <body style="background-color:lavender;">
+  
+<ul> 
+  <li><a href="#Hobbies & Inspiration">Hobbies & Inspiration</a></li>
+  <li><a href="#qualifications">Qualifications</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#timeline">Timeline</a></li>
+  <li><a href="#Home">Home</a></li>
+  <li style="float:left; padding: 10px 0px 0px 20px; color:magenta;font-size:25px;font-family:helvetica;"><i><b>Sam Hogsden</i></b></li>
+  <li style="float:left"><img src="https://lh3.googleusercontent.com/TT_G6UDqGWnC9A2GEVDnkdawaTWKx5WW6OfH03D5eHDZd8lqxUrjWmcq_ABCl5BbyqIlCN23SsgI3o1bhPTMf0WmLu_tHw8IDm2kZogs71T0-we5wXcxLan5gbYs3fIAjywl7meBUaGGMIQaddIXTwgHrnII-e4kg8AGlCrur3nSYyTUKoHV0JNGOr_sdv_WBxx1UBADBomFz0GBTGKuq9U6YnJ0jJU3nRdchGNX8X3Vhf8QVTSNlZmFpn1L-theDuuBCZ4uNhk5xuOojkKlu5Tv1qurhFLtUo3Sw2XRbmq4E15zHggUpkFI_1oxlrzlvAOQNcWL3UWZr2VUfXsKGEjPlbGBkTfy3_avpLA-H9HPadcQPGhpB_8ZAcZsL2HEkr26JvDzGclzC_xxzKdQLaRmoOJdG21ipZQ-YV80CDExWWiRdUnx1NxiGQzk_-5GI8F7AZDJNZUqQZmhj9hNu79M-sj92GFXJ7Xco9038P9b79JY9u_EPWsPgf-9LKwkWIcmdv1hTr5Ufzb-oo2tbIpnNlh-KbdSb2KlC-qBSugc1E0vMXs8C2kwIcOh7dzKSbEZqQu8IkYpsGEdNSw2oFTn9d1DZ4TfCtV9H8MYHoqH6dLGugXIWVEaeEIJWsZ8gX9JRbJ26mX-e86-yt-lRKBs7vpBMfYbVPPpTuN0uLOYeM3MzfjpNGbJ89wbog=s195-no?authuser=0" alt="Picture of me";"></li>
+  <li style="font-color:black;float:left; padding: 0px 0px 0px 0px;"><a href="mailto:sam@samhogsden.com"<i><b>sam@samhogsden.com</i></b></a></li>
+ </ul>
+  
+ <!-- <h1 style="text-align:center;color:black;font-size:60px;font-family:helvetica;" id="home">Sam Hogsden</h1> -->
+ <h1 style="text-align:center;color:magenta;font-size:40px;font-family:candara;padding:100px 0px 0px 0px;" id="Home">"I don't study to know more, but to ignore less."</h1>
+ <p style="text-align:right;color:white;font-size:20px;font-family:candara;"><i>- Sor Juana inés de la Cruz</i></p>
