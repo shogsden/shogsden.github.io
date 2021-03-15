@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -72,7 +73,7 @@ header {
   width: 70%;
   float: right;
   text-align: center;
-  height: 350px;
+  height: 450px;
   padding: 0px 100px 0px 0px;
  }
 
@@ -87,11 +88,11 @@ header {
 nav {
   float: left;
   width: 30%;
-  height: 350px;
+  height: 600px;
  font-style: perpetua;
   font-size:15px;
  text-align:center;
- padding: 30px;
+ padding: 0px 100px 0px 0px;
  }
  
  a:link {
@@ -160,27 +161,155 @@ font-family:times new roman;
  <section>
  <nav> 
    <div>
-     <h2><i>Portfolios:</i></h2>                       
+     <h2><i>Where else to find me:</i></h2>                       
      <dl>
      <dt><a href="https://www.linkedin.com/in/sam-hogsden" target="_blank"><i>LinkedIn</i></a></dt>
      <p></p>
-     <dt><a href="https://www.upwork.com/freelancers/~01fd224f0caa9ea738" target="_blank"><i>Upwork.</i></a></dt>
+     <h3 style="color:magenta;"><i>Social Media Freelancing Portfolios:</i></h3>                       
+     <dt><a href="https://www.upwork.com/freelancers/~01fd224f0caa9ea738" target="_blank"><i>Upwork</i></a></dt>
+     <dt><a href="https://www.fiverr.com/sam_hogsden/create-a-social-media-strategy-through-content-creation-and-scheduling" target="_blank"><i>Fiverr</i><a/></dt>
+     <dt><a href="https://www.freelancer.com/u/SamHogsden" target="_blank"><i>Freelancer</i></a></dt>
+     <dt><a href="https://useme.com/en/dashboard/" target="_blank"><i>Useme</i></a></dt>
+     <dt><a href="https://www.peopleperhour.com/freelancer/sam-hogsden-social-media-manager-qqnvayz" target="_blank"><i>PeoplePerHour</i></a></dt>
      <p></p>
-     <dt><a href="https://www.fiverr.com/sam_hogsden/create-a-social-media-strategy-through-content-creation-and-scheduling" target="_blank"><i>Fiverr.</i><a/></dt>
+     <h3 style="color:magenta;"><i>ESL Freelancing Portfolios:</i></h3>
+     <dt><a href="https://outschool.com/account/teacher#usvSdraHlj" target="_blank"><i>Outschool</i></a></dt>
+     <dt><a href="https://www.italki.com/user/8594198" target="_blank"><i>italki</i></a></dt>
      <p></p>
-     <dt><a href="https://www.freelancer.com/u/SamHogsden" target="_blank"><i>Freelancer.</i></a></dt>
-     <p></p>
-     <dt><a href="https://useme.com/en/dashboard/" target="_blank"><i>Useme.</i></a></dt>
-     <p></p>
-     <dt><a href="https://outschool.com/account/teacher#usvSdraHlj" target="_blank"><i>Outschool.</i></a></dt>
+     <h3 style="color:magenta;"><i>Whom else I recommend:</i></h3>                       
+     <dt><a href="https://www.meganhippmann.com/" target="_blank"><i>Website</i></a></dt>
+     <dt><a href="https://www.instagram.com/meganhippmann/" target="_blank"><i>Instagram</i></a></dt>
+     <dt><a href="https://www.linkedin.com/in/meganhippmann/" target="_blank"><i>LinkedIn</i></a></dt>
      </dl>
     </div>
  </nav>
   <article>
    <style="font-family:times new roman; width:100%; text-align:center">
-    <div>
      <h2><i>About Me:</i></h2>                       
-     <p><i>Excelling and challenging myself in communication: such as English, French, HTML, CSS, Javascript. I love developing myself through sport, projects, reading and cooking! I have achieved qualifications in Politics, Teaching and Supply Chain and I have been enjoying and advancing these skills, along with many others, in Customer Service, Teaching, Social Media and Supply Chain.</i></p>
+<!--     <p><i>Excelling and challenging myself in communication: such as English, French, HTML, CSS, Javascript. I love developing myself through sport, projects, reading and cooking! I have achieved qualifications in Politics, Teaching and Supply Chain and I have been enjoying and advancing these skills, along with many others, in Customer Service, Teaching, Social Media and Supply Chain.</i></p>   -->
+        
+<style>
+/* speech bubbles */
+.bubble1 {
+    position: relative;
+    background: #000000;
+    font-family: times new roman;
+    font-size: 15px;
+    color:#ffffff;
+    line-height: 20px;
+    text-align: center;
+    width: 500px;
+    height: 150px;
+    border-radius: 60px;
+    border: #5e17eb solid 1px;
+    padding: 10px;
+    margin-left:0px;
+    margin-top:25px;
+}
+.bubble1:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: #000000 transparent;
+    border-width: 0 20px 20px;
+    top: -20px;
+    left: 390px;
+}
+.bubble2 {
+    position: relative;
+    background: #000000;
+    font-family: times new roman;
+    font-size: 15px;
+    color:#ffffff;
+    line-height: 20px;
+    text-align: center;
+    width: 500px;
+    height: 150px;
+    border-radius: 60px;
+    border: #5e17eb solid 1px;
+    padding: 10px;
+    margin-left:400px;
+    margin-top:50px;
+}
+.bubble2:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: #000000 transparent;
+    border-width: 0 20px 20px;
+    top: -20px;
+    left: 62px;
+}
+/* .bubble3 {
+    position: absolute;
+    background: #e6e6fa;
+    font-family: times new roman;
+    font-size: 15px;
+    color:#000000;
+    line-height: 20px;
+    text-align: center;
+    width: 350px;
+    height: 100px;
+    border-radius: 60px;
+    border: #5e17eb solid 1px;
+    padding: 10px;
+    margin-left:10px;
+}
+.bubble3:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: #5e17eb transparent;
+    border-width: 0 20px 20px;
+    top: -20px;
+    left: 247px;
+}
+.bubble4 {
+    position: absolute;
+    background: #e6e6fa;
+    font-family: times new roman;
+    font-size: 15px;
+    color:#000000;
+    line-height: 20px;
+    text-align: center;
+    width: 350px;
+    height: 100px;
+    border-radius: 60px;
+    border: #5e17eb solid 1px;
+    padding: 15px;
+    margin-left:400px;
+    margin-top:50px;
+}
+.bubble4:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: #5e17eb transparent;
+    border-width: 0 20px 20px;
+    top: -20px;
+    left: 62px;
+} */
+/* speech bubbles */
+
+</style>
+
+    <div class="bubble1">
+    <p>I enjoy challenging myself and my understanding (especially in communication) to improve, both, others' experiences and my interactions.</p>
+    <p style="color:yellow;text-align:center;font-size:15px;"><i>For example: social media; languages; coding; politics, supply chain, sport, cooking, teaching and academia.</i></p> 
+    </div>
+    <div class="bubble2">
+    <p>So far, I have developed expertise, experience and qualifications in Politics, Teaching, Supply Chain, Social Media and Customer Service.</p> 
+    <p style="color:yellow;text-align:center;font-size:15px;"><i>In my spare time, I love playing, listening to and watching sports, reading, cooking, learning, voluntary work, innovating my own projects and debating</i></p> 
     </div>
      <br>
                  <style>
@@ -446,9 +575,11 @@ body {
                  <br>
                  <h2 style="background-color:white; font-family:times new roman; text-align:center;font-size:36px; color:darkolivegreen" id="projects"><b>Projects</b></h2>
                     <div>
-                      <h2><i>This Current Project:</i></h2>  
-                      <p><i>In my website learning and experimenting, I have currently understood and executed the basics of HTML, CSS and Javascript. Of course, I am only at the beginning stage and each day dedicating some time to expand my knowledge and executions further. I am using IONOS and GitHub, along with the following tutorial guide and, in just a few hours, got as far as here for now: <a href="https://www.w3schools.com/css/default.asp" target="_blank" >CSS HOME.</i></a></p>                           
-                    </div> 
+                      <h2><i>Website Development:</i></h2>  
+                      <p><i>In my website learning and designing, I have currently understood and executed some basics of HTML, CSS and Javascript. Of course, I am only at the beginning stage and each week dedicating some time to expand my knowledge and implementations further. I am using IONOS and GitHub, along with the following tutorial guide: <a href="https://www.w3schools.com/" target="_blank" >CSS HOME.</i></a></p>                           
+                      <h2><i>Personal Study:</i></h2>  
+                      <p><i>Creating a study project with a friend developing education and understanding to reduce discrimination.</i></p>
+		    </div> 
                       <br>
                  <h2 style="background-color:white; font-family:times new roman; text-align:center;font-size:36px; color:darkolivegreen" id="experience"><b>Experience</b></h2>
                  <h3 style="text-align:center;">Teaching</h3>
@@ -495,4 +626,3 @@ body {
   
   </body>
 </html>
-                                                                                         
