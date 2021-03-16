@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -70,8 +71,8 @@ header {
 }
  
  article {
-  width: 70%;
-  float: right;
+  width: 50%;
+  float: left;
   text-align: center;
   height: 450px;
   padding: 0px 100px 0px 0px;
@@ -87,13 +88,33 @@ header {
  /* Create columns/boxes that floats next to each other */
 nav {
   float: left;
-  width: 30%;
+  width: 25%;
   height: 600px;
  font-style: perpetua;
   font-size:15px;
  text-align:center;
  padding: 0px 100px 0px 0px;
+ background-img:url("images/Images/Norway.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position:center;
  }
+
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:25%;
+  height:500px	
+  font-style: perpetua;
+  font-size: 15px;
+  text-align:center;
+  padding: 0px 100px 0px 0px;
+  text-align:center;
+  background-img:url("images/Images/Norway.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
  
  a:link {
   color: darkolivegreen;
@@ -136,7 +157,7 @@ font-family:times new roman;
   text-align:center;
   font-size:36px"
  }
- 
+
  </style>
  </head>
  <body>
@@ -153,11 +174,20 @@ font-family:times new roman;
   <li style="float:left"><img src="images/Images/circle-cropped.png" alt="Picture of me";"></li>
   <li style="font-color:black;float:left; padding: 0px 0px 0px 0px;"><a href="mailto:sam@samhogsden.com"<i><b>sam@samhogsden.com</i></b></a></li>
  </ul>
-  
- <!-- <h1 style="text-align:center;color:black;font-size:60px;font-family:helvetica;" id="home">Sam Hogsden</h1> -->
- <h1 style="text-align:center;color:magenta;font-size:40px;font-family:candara;padding:100px 0px 0px 0px;" id="Home">"I don't study to know more, but to ignore less."</h1>
+	  
+<style>
+.bg {
+  background-image: url("images/Images/Innsbruck.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<div class=bg>
+<h1 style="background:bg;text-align:center;color:magenta;font-size:40px;font-family:candara;padding:100px 0px 0px 0px;" id="Home">"I don't study to know more, but to ignore less."</h1>
  <p style="text-align:right;color:white;font-size:20px;font-family:candara;"><i>- Sor Juana inés de la Cruz</i></p>
-  
+ </div>
  <section>
  <nav> 
    <div>
@@ -165,37 +195,29 @@ font-family:times new roman;
      <dl>
      <dt><a href="https://www.linkedin.com/in/sam-hogsden" target="_blank"><i>LinkedIn</i></a></dt>
      <p></p>
-     <h3 style="color:magenta;"><i>Social Media Freelancing Portfolios:</i></h3>                       
+     <h3 style="color:magenta;"><i>Social Media Freelancing:</i></h3>                       
      <dt><a href="https://www.upwork.com/freelancers/~01fd224f0caa9ea738" target="_blank"><i>Upwork</i></a></dt>
      <dt><a href="https://www.fiverr.com/sam_hogsden/create-a-social-media-strategy-through-content-creation-and-scheduling" target="_blank"><i>Fiverr</i><a/></dt>
      <dt><a href="https://www.freelancer.com/u/SamHogsden" target="_blank"><i>Freelancer</i></a></dt>
      <dt><a href="https://useme.com/en/dashboard/" target="_blank"><i>Useme</i></a></dt>
      <dt><a href="https://www.peopleperhour.com/freelancer/sam-hogsden-social-media-manager-qqnvayz" target="_blank"><i>PeoplePerHour</i></a></dt>
+     <dt><a href="https://www.workforimpact.com/freelancer/sam-h-3437" target="_blank"><i>Work for Impact</i></a></dt>
      <p></p>
-     <h3 style="color:magenta;"><i>ESL Freelancing Portfolios:</i></h3>
+     <h3 style="color:magenta;"><i>ESL Freelancing:</i></h3>
      <dt><a href="https://outschool.com/account/teacher#usvSdraHlj" target="_blank"><i>Outschool</i></a></dt>
      <dt><a href="https://www.italki.com/user/8594198" target="_blank"><i>italki</i></a></dt>
-     <p></p>
-     <h3 style="color:magenta;"><i>Whom else I recommend:</i></h3>                       
-     <dt><a href="https://www.meganhippmann.com/" target="_blank"><i>Website</i></a></dt>
-     <dt><a href="https://www.instagram.com/meganhippmann/" target="_blank"><i>Instagram</i></a></dt>
-     <dt><a href="https://www.linkedin.com/in/meganhippmann/" target="_blank"><i>LinkedIn</i></a></dt>
-     </dl>
     </div>
  </nav>
   <article>
    <style="font-family:times new roman; width:100%; text-align:center">
-     <h2><i>About Me:</i></h2>                       
-<!--     <p><i>Excelling and challenging myself in communication: such as English, French, HTML, CSS, Javascript. I love developing myself through sport, projects, reading and cooking! I have achieved qualifications in Politics, Teaching and Supply Chain and I have been enjoying and advancing these skills, along with many others, in Customer Service, Teaching, Social Media and Supply Chain.</i></p>   -->
-        
+	 
 <style>
-/* speech bubbles */
 .bubble1 {
     position: relative;
-    background: #000000;
+    background: #ffffff;
     font-family: times new roman;
     font-size: 15px;
-    color:#ffffff;
+    color:#000000;
     line-height: 20px;
     text-align: center;
     width: 500px;
@@ -203,7 +225,8 @@ font-family:times new roman;
     border-radius: 60px;
     border: #5e17eb solid 1px;
     padding: 10px;
-    margin-left:0px;
+    margin-right:0px;
+    margin-left:10px;
     margin-top:25px;
 }
 .bubble1:after {
@@ -212,17 +235,18 @@ font-family:times new roman;
     width: 0;
     z-index: 1;
     border-style: solid;
-    border-color: #000000 transparent;
-    border-width: 0 20px 20px;
-    top: -20px;
+    border-color: #ffffff transparent;
+    border-width: 20px 20px 0px;
+    bottom: -20px;
     left: 390px;
+    margin-left: -20px;
 }
 .bubble2 {
     position: relative;
-    background: #000000;
+    background: #ffffff;
     font-family: times new roman;
     font-size: 15px;
-    color:#ffffff;
+    color:#000000;
     line-height: 20px;
     text-align: center;
     width: 500px;
@@ -230,8 +254,8 @@ font-family:times new roman;
     border-radius: 60px;
     border: #5e17eb solid 1px;
     padding: 10px;
-    margin-left:400px;
-    margin-top:50px;
+    margin-left:100px;
+    margin-top:25px;
 }
 .bubble2:after {
     content: '';
@@ -239,109 +263,95 @@ font-family:times new roman;
     width: 0;
     z-index: 1;
     border-style: solid;
-    border-color: #000000 transparent;
-    border-width: 0 20px 20px;
+    border-color: #ffffff transparent;
+    border-width: 0px 20px 20px;
     top: -20px;
     left: 62px;
 }
-/* .bubble3 {
-    position: absolute;
-    background: #e6e6fa;
-    font-family: times new roman;
-    font-size: 15px;
-    color:#000000;
-    line-height: 20px;
-    text-align: center;
-    width: 350px;
-    height: 100px;
-    border-radius: 60px;
-    border: #5e17eb solid 1px;
-    padding: 10px;
-    margin-left:10px;
-}
-.bubble3:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    z-index: 1;
-    border-style: solid;
-    border-color: #5e17eb transparent;
-    border-width: 0 20px 20px;
-    top: -20px;
-    left: 247px;
-}
-.bubble4 {
-    position: absolute;
-    background: #e6e6fa;
-    font-family: times new roman;
-    font-size: 15px;
-    color:#000000;
-    line-height: 20px;
-    text-align: center;
-    width: 350px;
-    height: 100px;
-    border-radius: 60px;
-    border: #5e17eb solid 1px;
-    padding: 15px;
-    margin-left:400px;
-    margin-top:50px;
-}
-.bubble4:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    z-index: 1;
-    border-style: solid;
-    border-color: #5e17eb transparent;
-    border-width: 0 20px 20px;
-    top: -20px;
-    left: 62px;
-} */
-/* speech bubbles */
-
 </style>
 
+<style>
+.container1 {
+  position: relative;
+  margin-top:25px;
+}
+
+.mySlides {
+  display: none;
+}
+</style>
+	  
     <div class="bubble1">
     <p>I enjoy challenging myself and my understanding (especially in communication) to improve, both, others' experiences and my interactions.</p>
-    <p style="color:yellow;text-align:center;font-size:15px;"><i>For example: social media; languages; coding; politics, supply chain, sport, cooking, teaching and academia.</i></p> 
+    <p style="color:magenta;text-align:center;font-size:15px;"><i>For example: social media; languages; coding; politics, supply chain, sport, cooking, teaching and academia.</i></p> 
     </div>
+<div class="container1">
+  <div class="mySlides">
+    <img src="images/Images/1.png" style="width:20%">
+  </div>
+  <div class="mySlides">
+    <img src="images/Images/2.png" style="width:20%">
+  </div>
+  <div class="mySlides">
+   <img src="images/Images/3.png" style="width:20%">
+  </div> 
+  <div class="mySlides">
+   <img src="images/Images/4.png" style="width:20%">
+  </div>
+  
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
     <div class="bubble2">
     <p>So far, I have developed expertise, experience and qualifications in Politics, Teaching, Supply Chain, Social Media and Customer Service.</p> 
-    <p style="color:yellow;text-align:center;font-size:15px;"><i>In my spare time, I love playing, listening to and watching sports, reading, cooking, learning, voluntary work, innovating my own projects and debating</i></p> 
+    <p style="color:magenta;text-align:center;font-size:15px;"><i>In my spare time, I love playing, listening to and watching sports, reading, cooking, learning, voluntary work, innovating my own projects and debating</i></p> 
     </div>
      <br>
-                 <style>
-                    .row {
-                        display: flex;
-                                     }
-                    .column {
-                         flex:100%;
-                         padding: 0px;
-                                     }
-                      </style>             
-                 <div id="images">
-                  <div class="row">
-                    <div class="column">
-                 <img src="images/Images/1.png" style="width:75%;">
-                 </div>
-                   <div class="column">
-                 <img src="images/Images/2.png" style="width:75%;">
-                 </div>
-                    <div class="column">
-                 <img src="images/Images/3.png" alt="Customer Service Rep"; style="width:75%;"> 
-                 </div>
-                   <div class="column">
-                 <img src="images/Images/4.png" alt="Supply Chain Consultant"; style="width:75%;"> 
-                 </div> 
-                  </div>
-      </article>
+ 
+   </article>
+    <right>
+     <div>
+     <h2><i>Whom else I recommend:</i></h2>                       
+     <dl>
+     <h3 style="color:magenta;"><i>Megan Hippmann:</i></h3>                      
+     <dt><a href="https://www.meganhippmann.com/" target="_blank"><i>Website</i></a></dt>
+     <dt><a href="https://www.instagram.com/meganhippmann/" target="_blank"><i>Instagram</i></a></dt>
+     <dt><a href="https://www.linkedin.com/in/meganhippmann/" target="_blank"><i>LinkedIn</i></a></dt>
+     <p></p>
+     <h3 style="color:magenta;"><i>Niall Bunting:</i></h3>                      
+     <dt><a href="https://niallbunting.com/" target="_blank"><i>Website</i></a></dt>
+     <dt><a href="https://twitter.com/NiallBunting" target="_blank"><i>Twitter</i></a></dt>
+     <dt><a href="https://www.linkedin.com/in/niallbunting/" target="_blank"><i>LinkedIn</i></a></dt>
+     </div>
+    </right>
   </section>
  <h2 style="background-color:white; font-family:times new roman; text-align:center;font-size:36px; color:darkolivegreen" id="timeline"><b>Timeline</b></h2>
+ <div class=bg>
  <h1 style="text-align:center;color:magenta;font-size:40px;font-family:candara;" id="home">"Life is not a problem to be solved, but a reality to be experienced."</h1>
  <p style="text-align:right;color:white;font-size:20px;font-family:candara;"><i>- Søren Kierkegaard</i></p>
- 
+ </div>
+
  <style>
 * {
   box-sizing: border-box;
@@ -498,85 +508,12 @@ body {
     </div>
   </div>
 </div>
-<!--   <table style="font-family:times new roman; width:100%;text-align:center">
-                <tr>
-                 <th><i>Start</i></th>
-                 <th><i>Finish</i></th>
-                 <th><i>Venture</i></th>
-                 <th><i>With whom</i></th>
-                 <th><i>Location</i></th>
-                </tr>
-                    <br>
-                <tr>
-                 <td>Oct 2020</td>  
-                 <td>Present</td>
-                <td>Level 5 TEFL Course</td>
-                 <td><a href="https://www.theteflacademy.com/" target="_blank" title="TEFL Academy">TEFL Academy</a></td>
-                 <td><i>Maastricht (NL)</i></td>
-                </tr>
-                <tr>
-                <td>June 2020</td>
-                 <td>Present</td>
-                 <td>Social Media Manager</td>
-                <td><a href="#home">Freelance</a></td>
-                 <td><i>Maastricht (NL)</i></td>
-                </tr>
-                 <tr>
-                <td>June 2019</td>
-                 <td>June 2020</td>
-                 <td>Community Manager</td>
-                <td><a href="https://www.mercedes-benz.com/en/" target="_blank" title="Mercedes-Benz">Mercedes-Benz</a></td>
-                 <td><i>Maastricht (NL)</i></td>
-                </tr>
-                 <tr>
-                 <td>May 2019</td>
-                 <td>Present</td>
-                 <td>Voluntary English Teacher</td>
-                <td><a href="#home">Freelance</a></td>
-                 <td><i>Ashby (UK) & Maastricht (NL)</i></td>
-                </tr>
-           <tr>
-                <td>October 2018</td>
-                 <td>May 2019</td>
-                 <td>Customer Service Representative</td>
-                <td><a href="https://www.teleperformance.com/en-us/our-locations/united-kingdom" target="_blank" title="Teleperformance">Teleperformance</a></td>
-                 <td><i>Ashby (UK)</i></td>
-                </tr>
-                               <tr>
-                <td>September 2017</td>
-                 <td>September 2018</td>
-                 <td>MSc Global Supply Chain and Logistics Management</td>
-                <td><a href="https://www.sussex.ac.uk/" target="_blank" title="University of Sussex">University of Sussex</a></td>
-                 <td><i>Brighton (UK)</i></td>
-        </tr>
-                         <tr>
-                <td>June 2017</td>
-                 <td>September 2017</td>
-                 <td>Temporary Administrator</td>
-                <td><a href="http://www.jpdcontracts.co.uk/" target="_blank" title="JPD Contracts">JPD Contracts</a></td>
-                 <td><i>Coalville (UK)</i></td>
-                </tr>
-                         <tr>
-                <td>September 2016</td>
-                 <td>April 2017</td>
-                 <td>Sales Executive</td>
-                <td><a href="https://www.kilby.co.uk/" target="_blank" title="Kilby Packaging">Kilby Packaging</a></td>
-                 <td><i>Birmingham (UK)</i></td>
-                </tr>
-    <tr>
-                 <td>September 2013</td>
-                <td>June 2016</td>
-                 <td>BScEcon International Politics</a></li></td>
-                <td><a href="https://www.aber.ac.uk/en/" target="_blank" title="Aberystwyth University">Aberystwyth University</a></td>
-                 <td><i>Aberystwyth (Wales)</i></td>
-                </tr>
-                </table> -->
                                                                                                                                       
                  <br>
                  <h2 style="background-color:white; font-family:times new roman; text-align:center;font-size:36px; color:darkolivegreen" id="projects"><b>Projects</b></h2>
                     <div>
                       <h2><i>Website Development:</i></h2>  
-                      <p><i>In my website learning and designing, I have currently understood and executed some basics of HTML, CSS and Javascript. Of course, I am only at the beginning stage and each week dedicating some time to expand my knowledge and implementations further. I am using IONOS and GitHub, along with the following tutorial guide: <a href="https://www.w3schools.com/" target="_blank" >CSS HOME.</i></a></p>                           
+                      <p><i>In my website learning and designing, I have currently understood and executed some basics of HTML, CSS and Javascript. Of course, I am only at the beginning stage and each week dedicating some time to expand my knowledge and implementations further. I am using IONOS and GitHub, along with the following tutorial guide: <a href="https://www.w3schools.com/" target="_blank" >W3Schools.com</i></a></p>                           
                       <h2><i>Personal Study:</i></h2>  
                       <p><i>Creating a study project with a friend developing education and understanding to reduce discrimination.</i></p>
 		    </div> 
@@ -621,8 +558,7 @@ body {
 		</section>
                <br>
                  <hr>
-<p style="text-align:centre;"> &copy 2021</p>                                                         
-<!--     <p style="font-family:impact; text-align:center;color:red;font-size:20px;">&#128679 STILL UNDER CONSTRUCTION &#128679</p>      -->                       
+<p style="text-align:centre;"> &copy 2021</p>                                                          
   
   </body>
 </html>
