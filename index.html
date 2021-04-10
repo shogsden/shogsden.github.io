@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -10,7 +8,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
- /*Nav bar*/
+/*Nav bar*/
  ul {
   position: fixed;
   top: 0;
@@ -19,8 +17,9 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: #013248;
 }
+
 
 li {
   float: right;
@@ -28,18 +27,20 @@ li {
 
 li a {
   display: block;
-  color: darkolivegreen;
+  color: #fffff;
   text-align: left;
-  padding: 14px 16px;
+  padding: 10px 10px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: magenta;
+  background-color: #39bce7;
+  text-decoration: none;
 }
  
  .active {
-  background-color: magenta;
+  background-color: #39bce7;
+  text-decoration: none;
 }
  
  @media screen and (max-width: 600px) {
@@ -51,7 +52,7 @@ li a:hover {
 img {
  display:block;
   margin:auto;
-  width:25%;
+  width:15%;
  }
  
  * {
@@ -67,15 +68,15 @@ header {
   padding: 0px;
   text-align: center;
   font-size: 35px;
-  color: darkblue; 
+  color: #013248; 
 }
  
  article {
   width: 50%;
   float: left;
   text-align: center;
-  height: 450px;
-  padding: 0px 100px 0px 0px;
+  height: 300px;
+  padding: 0px 0px 0px 0px;
  }
 
 .center {
@@ -87,53 +88,62 @@ header {
 
  /* Create columns/boxes that floats next to each other */
 nav {
+  background-color: transparent;
   float: left;
   width: 25%;
-  height: 600px;
- font-style: perpetua;
+  height: 300px;
+  font-style: perpetua;
   font-size:15px;
- text-align:center;
- padding: 0px 100px 0px 0px;
- background-img:url("images/Images/Norway.png");
- background-repeat: no-repeat;
- background-size: cover;
- background-position:center;
- }
+  text-align:center;
+}
 
 .right {
-  background-color:#e5e5e5;
-  float:left;
+  background-color: transparent;
+  float:right;
   width:25%;
-  height:500px	
+  height:300px	
   font-style: perpetua;
   font-size: 15px;
   text-align:center;
-  padding: 0px 100px 0px 0px;
-  text-align:center;
-  background-img:url("images/Images/Norway.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position:center;
+  padding: 100px 0px 0px 0px;
 }
  
- a:link {
-  color: darkolivegreen;
+a.one:link {
+  color: #ffffff;
   background-color: transparent;
   text-decoration: none;
 }
 
-a:visited {
-  color: darkolivegreen;
+a.one:visited {
+  color: #ffffff;
   background-color: transparent;
   text-decoration: none;
 }
 
-a:hover {
-  color: white;
-  background-color: magenta;
-  text-decoration: underline;
+a.one:hover {
+  color: #ffffff;
+  background-color: #39bce7;
+  text-decoration: none;
 }
-  
+
+a.two:link {
+  color: #013248;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.two:visited {
+  color: #013248;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.two:hover {
+  color: #013248;
+  background-color: transparent;
+  text-decoration: none;
+	}
+ 
  /* Clear floats after the columns */
 section::after {
   content: "";
@@ -151,413 +161,224 @@ footer {
     width: 100%;
     height: auto;
   }
- 
+
  H2 {
-font-family:times new roman;
+  font-family:times new roman;
   text-align:center;
   font-size:36px"
  }
 
+
  </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  </head>
  <body>
  <body style="background-color:lavender;">
-  
+
 <ul> 
-  <li><a href="#Hobbies & Inspiration">Hobbies & Inspiration</a></li>
-  <li><a href="#qualifications">Qualifications</a></li>
-  <li><a href="#experience">Experience</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#timeline">Timeline</a></li>
-  <li><a href="#Home">Home</a></li>
-  <li style="float:left; padding: 10px 0px 0px 20px; color:magenta;font-size:25px;font-family:helvetica;"><i><b>Sam Hogsden</i></b></li>
-  <li style="float:left"><img src="images/Images/circle-cropped.png" alt="Picture of me";"></li>
-  <li style="font-color:black;float:left; padding: 0px 0px 0px 0px;"><a href="mailto:sam@samhogsden.com"<i><b>sam@samhogsden.com</i></b></a></li>
+  <li><a href="#Hobbies & Inspiration" class="one">Hobbies & Inspiration</a></li>
+  <li><a href="#qualifications" class="one">Qualifications</a></li>
+  <li><a href="#experience" class="one">Experience</a></li>
+  <li><a href="#projects" class="one">Projects</a></li>
+  <li><a href="#social justice" class="one">Social Justice</a></li>
+  <li><a href="#Home" class="one">Home</a></li>
+  <li style="float:left; padding: 0px 0px 0px 0px;"><a href="https://www.linkedin.com/in/sam-hogsden/" target="_blank" class="one" style="height:36px"><b><i class="fa fa-linkedin"></i></b></a></li>
+  <li style="float:left; padding: 0px 0px 0px 0px;"><a href="mailto:sam@samhogsden.com" alt="sam@samhogsden.com" class="one" style="height:36px"><b><i class="material-icons">mail</i></b></a></li>
  </ul>
-	  
-<style>
-.bg {
-  background-image: url("images/Images/Innsbruck.png");
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
-<div class=bg>
-<h1 style="background:bg;text-align:center;color:magenta;font-size:40px;font-family:candara;padding:100px 0px 0px 0px;" id="Home">"I don't study to know more, but to ignore less."</h1>
+
+
+<h1 style="text-align:center;color:#013248;font-size:40px;font-family:candara;padding:50px 0px 0px 0px;" id="Home">"I don't study to know more, but to ignore less."</h1>
  <p style="text-align:right;color:white;font-size:20px;font-family:candara;"><i>- Sor Juana inés de la Cruz</i></p>
- </div>
- <section>
+
+<section>
  <nav> 
-   <div>
-     <h2><i>Where else to find me:</i></h2>                       
+   <div>                                         
      <dl>
-     <dt><a href="https://www.linkedin.com/in/sam-hogsden" target="_blank"><i>LinkedIn</i></a></dt>
-     <p></p>
-     <h3 style="color:magenta;"><i>Social Media Freelancing:</i></h3>                       
-     <dt><a href="https://www.upwork.com/freelancers/~01fd224f0caa9ea738" target="_blank"><i>Upwork</i></a></dt>
-     <dt><a href="https://www.fiverr.com/sam_hogsden/create-a-social-media-strategy-through-content-creation-and-scheduling" target="_blank"><i>Fiverr</i><a/></dt>
-     <dt><a href="https://www.freelancer.com/u/SamHogsden" target="_blank"><i>Freelancer</i></a></dt>
-     <dt><a href="https://useme.com/en/dashboard/" target="_blank"><i>Useme</i></a></dt>
-     <dt><a href="https://www.peopleperhour.com/freelancer/sam-hogsden-social-media-manager-qqnvayz" target="_blank"><i>PeoplePerHour</i></a></dt>
-     <dt><a href="https://www.workforimpact.com/freelancer/sam-h-3437" target="_blank"><i>Work for Impact</i></a></dt>
-     <p></p>
-     <h3 style="color:magenta;"><i>ESL Freelancing:</i></h3>
-     <dt><a href="https://outschool.com/account/teacher#usvSdraHlj" target="_blank"><i>Outschool</i></a></dt>
-     <dt><a href="https://www.italki.com/user/8594198" target="_blank"><i>italki</i></a></dt>
-    </div>
+     <dt><h3 style="color:#013248"><i>Also check out:</i></a></h3></dt>
+     <dt><a href="https://www.meganhippmann.com/" target="_blank" class="two"><img src="images/Images/meganc.png" style=" float:center; display:inline"/></a></dt>
+     <dt><a href="https://www.instagram.com/meganhippmann/" target="_blank" class="two"><i class="fa fa-instagram" style="float:center; display:inline"></i></a>&nbsp&nbsp&nbsp<a href="https://www.linkedin.com/in/meganhippmann/" target="_blank" class="two"><i class="fa fa-linkedin" style="float:center; display:inline"></i></a></dt>
+     <br>
+     <dl>
+     <dt><a href="https://niallbunting.com/" target="_blank" class="two"><img src="images/Images/niallc.png" style=" float:center; display:inline"/></a></dt>
+     <dt><a href="https://twitter.com/NiallBunting" target="_blank" class="two"><i class="fa fa-twitter" style="float:center; display:inline"></i></a>&nbsp&nbsp&nbsp<a href="https://www.linkedin.com/in/niallbunting/" target="_blank" class="two"><i class="fa fa-linkedin" style="float:center; display:inline"></i></a></dt> 
+     <br>
+   </div>
  </nav>
   <article>
-   <style="font-family:times new roman; width:100%; text-align:center">
-	 
-<style>
-.bubble1 {
-    position: relative;
-    background: #ffffff;
-    font-family: times new roman;
-    font-size: 15px;
-    color:#000000;
-    line-height: 20px;
-    text-align: center;
-    width: 500px;
-    height: 150px;
-    border-radius: 60px;
-    border: #5e17eb solid 1px;
-    padding: 10px;
-    margin-right:0px;
-    margin-left:10px;
-    margin-top:25px;
-}
-.bubble1:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    z-index: 1;
-    border-style: solid;
-    border-color: #ffffff transparent;
-    border-width: 20px 20px 0px;
-    bottom: -20px;
-    left: 390px;
-    margin-left: -20px;
-}
-.bubble2 {
-    position: relative;
-    background: #ffffff;
-    font-family: times new roman;
-    font-size: 15px;
-    color:#000000;
-    line-height: 20px;
-    text-align: center;
-    width: 500px;
-    height: 150px;
-    border-radius: 60px;
-    border: #5e17eb solid 1px;
-    padding: 10px;
-    margin-left:100px;
-    margin-top:25px;
-}
-.bubble2:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    z-index: 1;
-    border-style: solid;
-    border-color: #ffffff transparent;
-    border-width: 0px 20px 20px;
-    top: -20px;
-    left: 62px;
-}
-</style>
-
-<style>
-.container1 {
-  position: relative;
-  margin-top:25px;
-}
-
-.mySlides {
-  display: none;
-}
-</style>
-	  
-    <div class="bubble1">
-    <p>I enjoy challenging myself and my understanding (especially in communication) to improve, both, others' experiences and my interactions.</p>
-    <p style="color:magenta;text-align:center;font-size:15px;"><i>For example: social media; languages; coding; politics, supply chain, sport, cooking, teaching and academia.</i></p> 
-    </div>
-<div class="container1">
-  <div class="mySlides">
-    <img src="images/Images/1.png" style="width:20%">
-  </div>
-  <div class="mySlides">
-    <img src="images/Images/2.png" style="width:20%">
-  </div>
-  <div class="mySlides">
-   <img src="images/Images/3.png" style="width:20%">
-  </div> 
-  <div class="mySlides">
-   <img src="images/Images/4.png" style="width:20%">
-  </div>
-  
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+<div class="b">
+<h2 style=white;color:#013248;font-size:30px;font-family:helvetica;text-align:center;">Sam Hogsden</h2>
+<p>I grew up in the UK, where I worked and studied in 3 different cities, and now living in Maastricht (Netherlands) for the last 2 years.</p>
+<p style="color:black;text-align:center;font-size:15px;"><i>Professionally, I have been growing in Supply Chain, Operations and Data Analytics for the past few years to continue my love of diving deep into data and processes for better strategies; and have just started doing this for <a href="https://www.justeattakeaway.com/" target="_blank" class="two">Just Eat Takeaway</a> <a href="https://www.thuisbezorgd.nl/" target="_blank" class="two">(Thuisbezorgd)</a> as a Driver Operations Coördinator and Analyst.</i></p>
+<p>Passionate about equality and communication, in my spare time, I am a freelancer in digital media and teaching; and a social media campaigner and activist for Anti-Racism. These include:
+<dl style="color:black;text-align:center;font-size:15px;">
+  <dt><i>Social Media and Community Manager for <a href="https://www.instagram.com/maastrichtkanhet/" target="_blank" class="two">Maastricht Kan Het</a>.</i></li>
+  <dt><i>Curating an Excel course for <a href="https://successformula.nl/" target="_blank" class="two">Success Formula</a>.</i></li>
+  <dt><i>SEO analyst and copywriter for <a href="https://www.facebook.com/Steph-Wadhams-101537511745746" target="_blank" class="two">Think Media</a>.</i></li>
+</dl>
+</p>
 </div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-
-    <div class="bubble2">
-    <p>So far, I have developed expertise, experience and qualifications in Politics, Teaching, Supply Chain, Social Media and Customer Service.</p> 
-    <p style="color:magenta;text-align:center;font-size:15px;"><i>In my spare time, I love playing, listening to and watching sports, reading, cooking, learning, voluntary work, innovating my own projects and debating</i></p> 
-    </div>
-     <br>
- 
    </article>
     <right>
      <div>
-     <h2><i>Whom else I recommend:</i></h2>                       
-     <dl>
-     <h3 style="color:magenta;"><i>Megan Hippmann:</i></h3>                      
-     <dt><a href="https://www.meganhippmann.com/" target="_blank"><i>Website</i></a></dt>
-     <dt><a href="https://www.instagram.com/meganhippmann/" target="_blank"><i>Instagram</i></a></dt>
-     <dt><a href="https://www.linkedin.com/in/meganhippmann/" target="_blank"><i>LinkedIn</i></a></dt>
-     <p></p>
-     <h3 style="color:magenta;"><i>Niall Bunting:</i></h3>                      
-     <dt><a href="https://niallbunting.com/" target="_blank"><i>Website</i></a></dt>
-     <dt><a href="https://twitter.com/NiallBunting" target="_blank"><i>Twitter</i></a></dt>
-     <dt><a href="https://www.linkedin.com/in/niallbunting/" target="_blank"><i>LinkedIn</i></a></dt>
+       <img src="images/Images/circle.png" alt="Picture of me";</li>
      </div>
     </right>
-  </section>
- <h2 style="background-color:white; font-family:times new roman; text-align:center;font-size:36px; color:darkolivegreen" id="timeline"><b>Timeline</b></h2>
- <div class=bg>
- <h1 style="text-align:center;color:magenta;font-size:40px;font-family:candara;" id="home">"Life is not a problem to be solved, but a reality to be experienced."</h1>
+</section>
+
+<br>
+ <h2 style="background-color:#013248; font-family:times new roman; text-align:center;font-size:36px; color:white" id="social justice"><b>Social Justice</b></h2>
+  <h1 style="text-align:center;color:#013248;font-size:40px;font-family:candara;padding:0px 0px 0px 0px;" id="Home">"When it comes to understanding and challenging oppressive systems like racism, words matter."</h1>
+  <p style="text-align:right;color:white;font-size:20px;font-family:candara;"><i>- Noel A. Cazenave</i></p>
+<section>
+ <nav> 
+   <div>                                         
+     <dl>
+     <dt><h3 style="color:#013248"><i>Anti-racist sources I recommend</i></a></h3></dt>
+     <dt><a href="https://www.ijeomaoluo.com/" target="_blank" class="two">Ijeoma Oluo</a></dt>
+     <dt><a href="https://www.adamrutherford.com/" target="_blank" class="two"><Adam Rutherford</a></dt>
+     <dt><a href="https://www.vpro.nl/speel~WO_VPRO_728933~zwart-als-roet-the-english-version-our-colonial-hangover~.html" target="_blank" class="two">Our Colonial Hangover</a></dt>
+     <dt><a href="https://sociology.uconn.edu/person/noel-cazenave/" target="_blank" class="two">Noel Cazenave</a></dt> 
+     <br>
+   </div>
+ </nav>
+  <article>
+<div>
+<p>My friends and family will testify that I have a huge passion to see society, indivudals and communities create equality, justice and treatment based on people's characters; not on a socially constructed, judged and assumed identity. This is why I campaign for equality in all areas of life: DEI, Social Media, Demonstrations, Education and Personal Study!</p>
+<p>The need for societal and idividual change is a lifelong practice. Bias that we have unconsciously learnt, microaggressions that we don't understand and overt behaviours that we display. All these incorporate how we treat and make others feel. Many things have been deeply embedded from the world in which we live - our hearts, our subconscious, our psychology, our unconscious, our thoughts, our souls, our minds and our behaviours. We must each strive to understand what we may do to invalidate and oppress people; and create painful experiences - this requires an open mind; letting our guards down; listening, reading and watching about others' experiences in life - from there, we can look to interact with one another in an upstanding way.</p>
+<p>I openly stand and go further than just internal reflection. I seek to overhaul pain and oppression that has been deeply entrenched in our systems in every part of society. I am actively doing this by participating with Maastricht Kan Het - an anti-racist organisation for the local community.</p> 
+</div>
+  </article>
+    <right>
+     <div>
+       <p><a href="https://www.instagram.com/p/CJ3veX3lwM5/?utm_source=ig_web_copy_link" target="_blank" class="two"><img src="mkh.png"</i></a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></p>
+     </div>
+    </right>
+</section>
+                                                                                                                                     
+<br>
+ <h2 style="background-color:#013248; font-family:times new roman; text-align:center;font-size:36px; color:white" id="projects"><b>Projects</b></h2>
+  <h1 style="text-align:center;color:#013248;font-size:40px;font-family:candara;padding:0px 0px 0px 0px;" id="Home">"Be led by your curiosity and keep busy by doing things that fill you with meaning and happiness."</h1>
+  <p style="text-align:right;color:white;font-size:20px;font-family:candara;"><i>- Heather Cleary</i></p>
+  <div>
+    <h2><i>Freelancing</i></h2>  
+      <p>As mentioned, I choose to use some of my spare time to contribute and develop my skills within the world of digital media. This entails: Copywriting; SEO; Proofreading; Social Media Management; and, of course, Website Developing.</dl>
+    <dl>Here is an overview of some of my profiles across various freelancing platforms:</p>                  
+      <dt style="font-color:#013248;"><a href="https://www.upwork.com/o/profiles/users/~01fd224f0caa9ea738/" target="_blank" class="two" style="float:center; display:inline;"><i>Upwork</i></a>&nbsp&nbsp&nbsp<a href="https://www.fiverr.com/sam_hogsden/create-a-social-media-strategy-through-content-creation-and-scheduling" target="_blank" class="two" style="float:center;display:inline"><i>Fiver</i></a>&nbsp&nbsp&nbsp<a href="https://www.freelancer.com/u/SamHogsden" target="_blank" class="two" style="float:center;display:inline"><i>Freelancer</i></a>&nbsp&nbsp&nbsp<a href="https://useme.com/en/dashboard/" target="_blank" class="two" style="float:center;display:inline"><i>Useme</i></a>&nbsp&nbsp&nbsp<a href="https://www.peopleperhour.com/freelancer/sam-hogsden-social-media-manager-qqnvayz" target="_blank" class="two" style="float:center;display:inline"><i>Peopleperhour</i></a>&nbsp&nbsp&nbsp<a href="https://www.workforimpact.com/freelancer/sam-h-3437" class="two" target="_blank" style="float:center;display:inline"><i>Work for Impact</i></a></dt>
+      <br> 
+     <dl>Furthemore, I enjoy educating and facilitating others' self-growth and skill-development. Thus, I am also setting myself up as an ESL teacher on the following platforms:</dl>
+      <dt><a href="https://outschool.com/account/teacher#usvSdraHlj" target="_blank" class="two" style="float:center;display:inline"><i>Outschool</i></a>&nbsp&nbsp&nbsp<a href="https://www.italki.com/user/8594198" target="_blank" class="two" style="float:center;display:inline"><i>italki</i></a></dt>
+    <h2><i>Website Development:</i></h2>  
+       <p>As you can see, I am studying and implementing my coding skills live via this website. In my learning, I have currently understood and executed some basics of HTML, CSS and Javascript. Of course, I am only at the beginning stage and regularly dedicate some time to expand my knowledge. For this project, I am using IONOS and GitHub as host platforms, along with the following tutorial guide: <a href="https://www.w3schools.com/" target="_blank" class="two"><i>W3Schools.com</i></a></p>                           
+    <h2><i>Personal Study</i></h2>  
+       <p>Although, still a project in it's youth; I am seeking to contribute my learning and passions further to overcome inequality and oppression that our society faces. This has led to some early discussions and ambitions for me and my friend, Megan, to create an online discussion platform based on our journey to strive towards an anti-racist society. This is likely to comprise of either a blog or podcast. So keep a look out!</p>
+    <h2><i>Languages</i></h2>  
+       <p>I love communication! And languages fascinate me very much. This is why I am setting myself targets to improve my skills of 3 languages: French; Dutch; and German.</p>
+       <p>French (B2) - I watch and listen to various channels and media on a daily basis. This includes: doing Yoga in French; sometimes watching cooking videos in French; watching some French YouTube channels (e.g. <a href="https://www.youtube.com/channel/UCVzyfpNuFF4ENY8zNTIW7ug?sub_confirmation=1" target="_blank" class="two"><i>Piece of French</i></a> and <a href="https://www.youtube.com/arteplus7" target="_blank" class="two"><i>Arte</i></a>). On top of this, I meet weekly with a friend of mine, who is a native French-speaker, to converse for an hour or two in French.</p>
+       <p>Dutch (A1) - Living in the Netherlands has inspired me to develop my Dutch skills. I exchange in basic Dutch when shopping and speaking on the phone, plus, read documentation and some news in Dutch. In addition, I'm currently following this YouTube course: <a href="https://youtube.com/playlist?list=PLAeu18HndGgBR-QLw8b8Wzp0gLiVfCS7n" target="_blank" class="two"><i>DUTCH FOR BEGINNERS COURSE (A0/A1)</i></a>.</p>
+       <p>German (A2) - I started to learn German when looking to move closer to the heart of the EU (knowing that it could open more doors for me). I have taken a few lessons, watched a few TV shows and followed a couple of beginners courses on YouTube. Although I do practice it a few times a week, know the basics and get around with little hassle; this has taken a bit of a backseat for the time being.</p>
+</div>
+     
+<br>
+ <h2 style="background-color:#013248; font-family:times new roman; text-align:center;font-size:36px; color:white" id="experience"><b>Experience</b></h2>
+  <h1 style="text-align:center;color:#013248;font-size:40px;font-family:candara;padding:0px 0px 0px 0px;" id="Home">"The real power of incremental growth comes to bear when we truly are like water, steadily carving stone. We just keep on flowing when every-thing is on the line."</h1>
+  <p style="text-align:right;color:white;font-size:20px;font-family:candara;"><i>- Josh Waitzkin</i></p>
+  <table style="font-family:times new roman; width:100%;text-align:center">
+                <tr>
+                 <th><i>Start</i></th>
+                 <th><i>Finish</i></th>
+                 <th><i>Venture</i></th>
+                 <th><i>With whom</i></th>
+                 <th><i>Location</i></th>
+                </tr>
+                <tr>
+                 <td>Apr 2021</td>  
+                 <td>Present</td>
+                <td>Driver Operations Coördinator and Analyst</td>
+                 <td><a href="https://www.justeattakeaway.com/" target="_blank" class="two">Just Eat Takeaway</a></td>
+                 <td><i>Maastricht (NL)</i></td>
+                </tr>
+                <tr>
+                 <td>Mar 2021</td>  
+                 <td>Jun 2021</td>
+                <td>Temporary Excel and Data Learning Strategist</td>
+                 <td><a href="https://successformula.nl/" target="_blank" class="two">Success Formula</a></td>
+                 <td><i>Maastricht (NL)</i></td>
+                </tr>
+                <tr>
+                <td>June 2020</td>
+                 <td>Present</td>
+                 <td>Voluntary Social Media Analyst</td>
+                <td><a href="https://www.nederlandwordtbeter.nl/" target="_blank" class="two">Nederland Wordt Beter</a></td>
+                 <td><i>Maastricht (NL)</i></td>
+                </tr>
+                 <tr>
+                <td>June 2019</td>
+                 <td>May 2020</td>
+                 <td>Data Analyst and Social Media Optimiser</td>
+                <td><a href="https://www.mercedes-benz.com/en/" target="_blank" class="two">Mercedes-Benz</a></td>
+                 <td><i>Maastricht (NL)</i></td>
+                </tr>
+                 <tr>
+                 <td>Oct 2018</td>
+                 <td>May 2019</td>
+                 <td>Temporary Customer Operations Specialist</td>
+                <td><a href="https://www.eon.com/en.html" target="_blank" class="two">E.ON</a></td>
+                 <td><i>Ashby (UK)</i></td>
+                </tr>
+               <tr>
+                <td>September 2017</td>
+                 <td>September 2018</td>
+                 <td>Supply Chain Intern</td>
+                <td><a href="https://www.thebodyshop.com/" target="_blank" class="two">The Body Shop</a></td>
+                 <td><i>Brighton (UK)</i></td>
+               </tr>
+               <tr>
+                <td>June 2017</td>
+                 <td>September 2017</td>
+                 <td>Temporary Administrator</td>
+                <td><a href="http://www.jpdcontracts.co.uk/" target="_blank" class="two">JPD Contracts</a></td>
+                 <td><i>Coalville (UK)</i></td>
+                </tr>
+                         <tr>
+                <td>September 2016</td>
+                 <td>April 2017</td>
+                 <td>Temporary Sales Executive</td>
+                <td><a href="https://www.kilby.co.uk/" target="_blank" class="two">Kilby Packaging</a></td>
+                 <td><i>Birmingham (UK)</i></td>
+                </tr>
+</table>
+
+<br>
+ <h2 style="background-color:#013248; font-family:times new roman; text-align:center;font-size:36px;color:white;" id="qualifications"><b>Qualifications<b/></h2>
+  <h1 style="text-align:center;color:#013248;font-size:40px;font-family:candara;padding:0px 0px 0px 0px;" id="Home">"The value of our lives is not determined by what we do for ourselves. The value of our lives is determined by what we do for others."</h1>
+  <p style="text-align:right;color:white;font-size:20px;font-family:candara;"><i>- Simon Sinek</i></p>
+  <div>
+   <dl>
+    <dt><a href="https://www.sussex.ac.uk/" target="_blank" class="two"><img src="images/Images/sussex.png" style=" float:center; display:inline"/></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.aber.ac.uk/en/" target="_blank" class="two"><img src="images/Images/aber.png" style=" float:center; display:inline"/></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.theteflacademy.com/" target="_blank" class="two"><img src="images/Images/tefl.png" style=" float:center; display:inline"/></a></dt>
+   </dl>
+  </div>   
+
+<br>
+ <h2 style="background-color:#013248; font-family:times new roman; text-align:center;font-size:36px; color:white" id="Hobbies & Inspiration"><b>Hobbies & Inspiration<b/></h2>
+ <h1 style="text-align:center;color:#013248;font-size:40px;font-family:candara;padding:0px 0px 0px 0px;">"Life is not a problem to be solved, but a reality to be experienced."</h1>
  <p style="text-align:right;color:white;font-size:20px;font-family:candara;"><i>- Søren Kierkegaard</i></p>
  </div>
-
- <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: lavender;
-  font-family: times new roman, mv boli;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 2000px;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 5px;
-  background-color: magenta;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-/* Container around content */
-.container {
-  padding: 10px 40px;
-  position: relative;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: lavender;
-  border: 4px solid darkolivegreen;
-  top: 15px;
-  border-radius: 100%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  left: 1;
-}
-
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 10px 10px;
-  background-color: white;
-  border: 1px solid darkolivegreen;
-  border-radius: 100px;
-  text-align: center;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-  left: 31px;
-  }
-
-</style>
-
-<div class="timeline">
-  <div class="container left">
-    <div class="content">
-      <h3>Oct 20 - Present</h3>
-      <p>Level 5 TEFL Course</p>
-      <p><a href="https://www.theteflacademy.com/" target="_blank" title="TEFL Academy">TEFL Academy</a></p>
-      <p><i>Maastricht (NL)</i></td></p>
-    </div>
+<section>
+ <nav style="width:50%;padding:100px 0px 0px 0px;">
+  <div>
+    <p style="font-family:mv boli; text-align:center;color:black;"><a href="https://www.linkedin.com/posts/sam-hogsden_a-walk-in-7-degrees-may-not-be-to-everyones-activity-6764880051658878976-HYxO" target="_blank" class="two"><i>"The sun, snow and fresh air create a new sense of inspiration for me."</i></p>
   </div>
-  <div class="container right">
-    <div class="content">
-      <h3>Jun 20 - Present</h3>
-      <p>Social Media Manager</p>
-      <p><a href="#home">Freelance</a></p>
-      <p><i>Maastricht (NL)</i></p>
-    </div>
+ </nav>
+ <article>
+  <div>
+   <img src="images/Images/Snow/Cropped.jpg"; style="width:43%;" class="right;">
   </div>
-  <div class="container left">
-    <div class="content">
-      <h3>Jun 19 - Jun 20</h3>
-      <p>Community Manager</p>
-      <p><a href="https://www.mercedes-benz.com/en/" target="_blank" title="Mercedes-Benz">Mercedes-Benz</a></p>
-      <p><i>Maastricht (NL)</i></p></p>
-    </div>
-  </div>
-  <div class="container right">
-    <div class="content">
-      <h3>May 19 - Present</h3>
-      <p>Foreign Language English Teacher</p>
-      <p><a href="#home">Freelance</a></p>
-      <p><i>Ashby (UK) & Maastricht (NL)</i></p>
-    </div>
-  </div>
-  <div class="container left">
-    <div class="content">
-      <h3>Oct 18 - May 19</h3>
-      <p>Customer Service Representative</p>
-      <p><a href="https://www.teleperformance.com/en-us/our-locations/united-kingdom" target="_blank" title="Teleperformance">Teleperformance</a></p>
-      <p><i>Ashby (UK)</i></p>
-    </div>
-  </div>
-  <div class="container right">
-    <div class="content">
-      <h3>Sep 17 - Sep 18</h3>
-      <p>MSc Global Supply Chain and Logistics Management</p>
-      <p><a href="https://www.sussex.ac.uk/" target="_blank" title="University of Sussex">University of Sussex</a></p>
-      <p><i>Brighton (UK)</i></p>
-    </div>
-  </div>
-  <div class="container left">
-    <div class="content">
-      <h3>Jun 17 - Sep 17</h3>
-      <p>Temporary Administrator</p>
-      <p><a href="http://www.jpdcontracts.co.uk/" target="_blank" title="JPD Contracts">JPD Contracts</a></p>
-      <p><i>Coalville (UK)</i></p>
-    </div>
-  </div>
-  <div class="container right">
-    <div class="content">
-      <h3>Sep 16 - Apr 17</h3>
-      <p>Sales Executive</p>
-      <p><a href="https://www.kilby.co.uk/" target="_blank" title="Kilby Packaging">Kilby Packaging</a></p>
-      <p><i>Birmingham (UK)</i</p>
-    </div>
-  </div>
-  <div class="container left">
-    <div class="content">
-      <h3>Sep 13 - Jun 16</h3>
-      <p>BScEcon International Politics</a></li></p>
-      <p><a href="https://www.aber.ac.uk/en/" target="_blank" title="Aberystwyth University">Aberystwyth University</a></p>
-      <p><i>Aberystwyth (Wales)</i></p>
-    </div>
-  </div>
-</div>
-                                                                                                                                      
-                 <br>
-                 <h2 style="background-color:white; font-family:times new roman; text-align:center;font-size:36px; color:darkolivegreen" id="projects"><b>Projects</b></h2>
-                    <div>
-                      <h2><i>Website Development:</i></h2>  
-                      <p><i>In my website learning and designing, I have currently understood and executed some basics of HTML, CSS and Javascript. Of course, I am only at the beginning stage and each week dedicating some time to expand my knowledge and implementations further. I am using IONOS and GitHub, along with the following tutorial guide: <a href="https://www.w3schools.com/" target="_blank" >W3Schools.com</i></a></p>                           
-                      <h2><i>Personal Study:</i></h2>  
-                      <p><i>Creating a study project with a friend developing education and understanding to reduce discrimination.</i></p>
-		    </div> 
-                      <br>
-                 <h2 style="background-color:white; font-family:times new roman; text-align:center;font-size:36px; color:darkolivegreen" id="experience"><b>Experience</b></h2>
-                 <h3 style="text-align:center;">Teaching</h3>
-                 <p style="text-align:center;">Organizing weekly lessons for a Spanish student and a Francophone - moving from B2 to C1.</p>
-                 <h3 style="text-align:center;">Social Media</h3>
-                 <p style="text-align:center;">Creating content to facilitate conversations with the citizens & the mayor about racial equality.</p>
-                 <p style="text-align:center;">Forming a crisis team to resolve a hacking, responding in 7 minutes to maintain standards.</p>
-                 <p style="text-align:center;">Leading internal communication by editing articles to an internal audience of 300,000.</p>
-                 <h3 style="text-align:center;">Customer Service & Sales</h3>
-                 <p style="text-align:center;">Responding to customers by creating a code to fix their gas within 2 hours.</p>
-                 <p style="text-align:center;">Scheduling engineer visits to install smart meters, compiling reports to exceed 2 per shift.</p>
-                 <p style="text-align:center;">Managing clients' orders by organizing new routes around Birmingham to adapt to needs.</p>
-                 <p style="text-align:center;">Writing & negotiating contracts to win new business, increasing revenue by over £1000 p/m.</p>
-                 <h3 style="text-align:center;">Supply Chain, Operations & Logistics</h3>
-                 <p style="text-align:center;">Developing, with several departments a transportation model for the Body Shop - 94% mark.</p>
-                 <p style="text-align:center;">Proposing a model for an entrepreneur to penetrate the Indonesian coffee market in Brighton.</p>
-                
-                 <br>
-                 <h2 style="background-color:white; font-family:times new roman; text-align:center;font-size:36px; color:darkolivegreen" id="qualifications"><b>Qualifications<b/></h2>
-                      <div>
-                        <h2><i>Skills & Assets:</i></h2>  
-                        <p><i>Problem solving. Communication. Operations & logistics. Leading. Content creation. Marketing & sales. Lead generation. Social media & community management. SEO & website development. Lesson planning. Supply chain & SAP. Native English & French B2.</i></p>                           
-                      </div>   
-                  <br>
+ </article>
+</section>
 
-                 <h2 style="background-color:white; font-family:times new roman; text-align:center;font-size:36px; color:darkolivegreen" id="Hobbies & Inspiration"><b>Hobbies & Inspiration<b/></h2>
-                 <section>
-		    <nav style="background-color:magenta;padding:100px 0px 0px 0px;">
-		      <div>
-		 	<h3 style="font-family:mv boli; text-align:center;"> <a href="https://raw.githubusercontent.com/shogsden/shogsden.github.io/main/Snow%20blog" target="_blank" title="Snow Walks blog post">Snow Walks</a></h3>
-                 	<p style="font-family:mv boli; text-align:center; color:white"><i>Despite it being -7 degrees, I do love the sun and snow. It feels so Alpine.</i></p>
-                      </div>
-                    </nav>
-		    <article style="background-color:magenta;">
-		      <div>
-			<img src="images/Images/Snow/Cropped.jpg" alt="Walk in the snow"; style="width:43%;" class="right;">
-                      </div>
-		    </article>
-		</section>
-               <br>
-                 <hr>
+<br>
+<hr>
 <p style="text-align:centre;"> &copy 2021</p>                                                          
   
   </body>
